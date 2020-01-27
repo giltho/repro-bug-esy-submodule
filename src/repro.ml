@@ -1,0 +1,1 @@
+let print_z3_version () = print_endline Z3.Version.full_version

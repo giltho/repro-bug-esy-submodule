@@ -1,0 +1,24 @@
+{
+  "name": "repro",
+  "version": "0.0.0",
+  "description": "Trying to reproduce an esy bug",
+  "esy": {
+    "build": "dune build @install --promote-install-files",
+    "buildsInSource": "_build"
+  },
+  "scripts": {
+    "format-check": "dune build @fmt",
+    "javert:init:env": "JaVert/scripts/setup_environment.sh",
+    "cgil:init:env": "cgil/scripts/setup_environment.sh",
+    "wisl:init:env": "wisl/scripts/setup_environment.sh"
+  },
+  "dependencies": {
+    "@opam/z3": "4.8.1",
+    "@opam/dune": "^2.0",
+    "ocaml": "^4.8.0"
+  },
+  "devDependencies": {
+    "@opam/merlin": "*",
+    "ocaml": "4.8.1000"
+  }
+}
