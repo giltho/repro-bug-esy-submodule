@@ -12,8 +12,8 @@ jobs:
       uses: actions/setup-node@v1.1.0
     - name: Install esy
       run: 'npm install -g esy@0.6.0 --unsafe-perm'
-    - name: ls
-      run: 'ls -alh'
+    - name: Checkout
+      uses: actions/checkout@v2.0.0
     - name: esy install
       run: 'esy install'
     - name: esy build
